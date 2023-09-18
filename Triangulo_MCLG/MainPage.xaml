@@ -7,21 +7,27 @@
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
             <Label Text="Triangulo" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        <Label Text="Base" />
-        <Entry Placeholder="Base" x:Name="Base" Keyboard="Numeric"/>
-        <Label Text="Altura"/>
-        <Entry Placeholder="Altura" x:Name="Altura" Keyboard="Numeric"/>
-        <Label Text="Lados"/>
-        <Entry Placeholder="Primer lado" x:Name="Lado1" Keyboard="Numeric"/>
-        <Entry Placeholder="Segundo lado" x:Name="Lado2" Keyboard="Numeric"/>
-        <Button Text="Calcular" Clicked="Button_Clicked"/>
-        <Label Text="Tipo de Triangulo"/>
-        <Entry Placeholder="Tipo de triangulo" x:Name="TipoTriangulo" IsEnabled="False"/>
-        <Label Text="Area del triangulo"/>
-        <Entry Placeholder="Area del triangulo" x:Name="AreaTriangulo" IsEnabled="False"/>
-        <Image Source="descargaEqui.jpg"  x:Name="imgEquilatero" IsVisible="False"/>
-        <Image Source="isosceles.png" x:Name="imgIsosceles" IsVisible="False" />
-        <Image Source="escaleno.jpg" x:Name="imgEscaleno" IsVisible="False" />
+        <StackLayout Padding="15, 25, 15, 15">
+            <Grid>
+                <Label Grid.Row="0" Grid.Column="0" VerticalOptions="Center" Text="Base" />
+                <Entry Grid.Row="0" Grid.Column="1" Placeholder="Base" x:Name="Base" Keyboard="Numeric"/>
+                <Label Text="Altura"/>
+                <Entry Placeholder="Altura" x:Name="Altura" Keyboard="Numeric"/>
+                <Label Text="Lados"/>
+                <Entry Placeholder="Primer lado" x:Name="Lado1" Keyboard="Numeric"/>
+                <Entry Placeholder="Segundo lado" x:Name="Lado2" Keyboard="Numeric"/>
+                <Button Text="Calcular" Clicked="Button_Clicked"/>
+                <Label Text="Tipo de Triangulo"/>
+                <Entry Placeholder="Tipo de triangulo" x:Name="TipoTriangulo" IsEnabled="False"/>
+                <Label Text="Area del triangulo"/>
+                <Entry Placeholder="Area del triangulo" x:Name="AreaTriangulo" IsEnabled="False"/>
+                <Image Source="descargaEqui.jpg"  x:Name="imgEquilatero" IsVisible="False"/>
+                <Image Source="isosceles.png" x:Name="imgIsosceles" IsVisible="False" />
+                <Image Source="escaleno.jpg" x:Name="imgEscaleno" IsVisible="False" />
+            </Grid>
+            
+        </StackLayout>
+        
 
     </StackLayout>
 
